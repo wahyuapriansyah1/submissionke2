@@ -1,1 +1,1 @@
-APP_URL= https://tugasakhirinter.netlify.app/
+Link tugas https://submissionke2.vercel.app/
