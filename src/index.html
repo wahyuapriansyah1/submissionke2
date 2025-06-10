@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/favicon.png" />
+    <title>Kuliner Nusantara</title>
+    <meta name="description" content="Aplikasi review makanan khas Indonesia. Temukan, ulas, dan bagikan pengalaman kuliner nusantara favoritmu!" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="stylesheet" href="/styles/main.css">
+
+    <script type="module" src="/scripts/index.js"></script>
+  </head>
+  <body>
+    <a href="#main-content" class="skip-to-content">Lewati ke konten utama</a>
+
+    <header>
+      <div class="main-header container">
+        <a class="brand-name" href="#/" aria-label="Kuliner Nusantara">
+          Kuliner Nusantara
+        </a>
+
+        <nav id="navigation-drawer" class="navigation-drawer" aria-label="Navigasi utama">
+          <ul id="nav-list" class="nav-list">
+            <li><a href="#/" aria-current="page">Kuliner Pilihan</a></li>
+            <li class="auth-required"><a href="#/stories">Daftar Kuliner</a></li>
+            <li class="auth-required"><a href="#/add-story">Review Baru</a></li>
+            <li class="auth-only hidden"><a href="#" id="logoutBtn" role="button">Keluar</a></li>
+            <li class="guest-only hidden"><a href="#/login">Masuk</a></li>
+            <li class="guest-only hidden"><a href="#/register">Daftar</a></li>
+          </ul>
+        </nav>
+
+        <button id="drawer-button" class="drawer-button" aria-label="Toggle navigation menu" aria-expanded="false">☰</button>
+      </div>
+    </header>
+
+    <main id="main-content" class="main-content" tabindex="-1"></main>
+  </body>
+</html>
